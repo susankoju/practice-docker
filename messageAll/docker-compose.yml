@@ -1,13 +1,21 @@
 version: '3'
 services: 
         messageall-backend:
+      
                 build: ./back-end/
                 ports:
                         - "4000:4000"
+                restart: on-failure
+                volumes:
+                        - ./back-end/:/usr/src/messageAll-backend/
 
 
         messageall-frontend:
-                build: ./front-end/
+      
+                build:
+                        context: ./front-end/
                 ports: 
                         - "9898:80" 
+                restart: on-failure     
 
+      
