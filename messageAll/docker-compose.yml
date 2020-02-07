@@ -1,0 +1,13 @@
+version: '3'
+services: 
+        messageall-backend:
+                build: ./back-end/
+                ports:
+                        - "4000:4000"
+
+
+        messageall-frontend:
+                build: ./front-end/
+                ports: 
+                        - "9898:80" 
+
