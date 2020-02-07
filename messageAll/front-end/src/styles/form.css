@@ -1,0 +1,77 @@
+.sidenav{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+}
+.sidenav .login-main-text{
+    padding: 1em;
+}
+.signinMain, .signupMain{
+    float: right;
+    height: 100vh;
+    width: 80%;
+    font-size: 1.25em;
+}
+.signinMain h2, .signupMain h2{
+    box-shadow: 0px 7px 15px -10px grey;
+    padding-bottom: 0.25em;
+    text-align: center;
+}
+
+.signinMain form, .signupMain form{
+    max-width: 24em;
+    padding: 1em;
+    margin: 0px auto;
+    margin-top: 16%;
+}
+.signupMain form{
+    margin-top: 7%;
+}
+
+.signupMain .half{
+    max-width: 11.5em;
+    display: inline-block;
+}
+.signupMain .half:first-child{
+    margin-right: 1em;
+}
+
+.signupMain label{
+    display: block;
+}
+
+.signupMain input{
+    margin: 0.5em 0.5em 0.5em 0em ;
+}
+
+.login-main-text{
+    margin: 30vh auto;
+}
+
+input{
+    font-size: 1em;
+    height: 2em;
+    margin: 0.5em 0.5em 1em 0em ;
+    padding: 0.2em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+
+}
+
+input[type=password], input[type=email], input[type=text]{
+    width: 100%;
+}
+
+input[type=submit], input[type=reset]{
+    cursor: pointer;
+    padding: 0.75em;
+    height: auto;
+}
+
+.btn-black{
+    background-color: black;
+    color: white;
+}

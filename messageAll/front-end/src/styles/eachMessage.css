@@ -1,0 +1,71 @@
+
+.messageRow{
+    margin: 1em;
+    width: 75%;
+}
+.profile{
+    padding: 1em 0.2em 0em 0.2em;
+    text-align: center;
+    width: 15%;;
+    display: inline-block;
+}
+.profile img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.row{
+    height: auto;
+}
+
+.messageBubble{
+    background-color: rgb(95,132,206);
+    border-radius: 0em 1.5em 1.5em 1.5em;
+    padding: 1em;
+    position: relative;
+    color: #fff;    
+    display: inline-block;
+    max-width: 70%;
+    min-width: 40%;
+}
+
+.messageBubble .time{
+    float: right;
+    color: #ddd;
+    position: absolute;
+    bottom: 0.5em;
+    right: 1em;
+    font-size: 0.75em;
+}
+
+.cross{
+    background-color: crimson;
+    border-radius: 50%;
+    color: white;
+    padding: 0.25em 0.55em;
+    position: absolute;
+    display: none;
+    left: -0.25em;
+    top: -0.25em;
+}
+
+.messageRow.sender:hover .cross{
+    display: inline;
+    cursor: pointer;
+}
+
+.sender{
+    text-align: right;
+    margin-left: auto;
+}
+
+.sender .messageBubble{
+    background-color: rgb(236,236,236);
+    border-radius: 1.5em 0em 1.5em 1.5em;
+    color: #555;
+}
+.sender .messageBubble .time{
+    color: #aaa;
+    right: auto;
+    left: 1em;
+}

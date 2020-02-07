@@ -1,0 +1,13 @@
+
+.user .profile{
+    width: 100%;
+    display: block;
+    max-width: 720px;
+    margin: 0px auto;
+    padding: 0px;
+    position: relative;
+}
+
+.user .profile .home, .user .profile .logout {
+    width: 15%;
+}

@@ -1,0 +1,148 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.sidebar{
+    height: 100vh;
+    overflow: hidden;
+    background-color: honeydew;
+    width: 30%;
+    float: right;
+}
+.sidebar .users{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.sidebar .profile{
+    width: 80%;
+    position: relative;
+    box-shadow: 1px 2px 8px grey;
+    display: block;
+    padding: 1em 10%;
+    margin: 0px auto;
+}
+
+.messageWrapper{
+    width: 70%;
+    display: inline-block;
+}
+
+.boxWrapper{
+    width: 100%;
+    min-width: 360px;
+    max-width: 820px;
+    margin: 0em auto;
+    height: 100vh;
+    position: relative;
+}
+
+.messageHeader{
+    padding: 0.2em 0px;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 1px grey;
+}
+
+.messageHeader h2{
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.messageHeader p{
+    padding-left: 1.5em;
+    margin: 1.25em 2em;
+    float: right;
+    background-image: url('/images/button-850099_960_720.png');
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.messageHeader button{
+    width: 4em;
+    padding: 0px;
+    background: none;
+    border: none;
+    outline: none;
+    float: right;
+    margin-right: 2.5em;
+}
+.messageHeader img{
+    width: 100%;
+}
+
+
+.messageScroller{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 90%;
+}
+
+.messageBase{
+    height: 5vh;
+}
+
+.messageBase form{
+    height: 100%;
+    padding: 0px;
+}
+
+.messageBase form input{
+    width: 85%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px 1em;
+    border-radius: 2em;
+    outline: none;
+}
+
+
+.messageBase button{
+    background: none;
+    border: none;
+    outline: none;
+    height:  100%;
+    margin-right: 1em;
+    float: right;
+}
+
+.messageBase button img{
+    height: 100%;
+}
+
+
+.logout, .home{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 20%;
+}
+.home{
+    left: 1em;
+}
+
+.right{
+    float: right;
+}
+
+@media only screen and (max-width:1040px) {
+    
+    .messageBase form input{
+        width: 68%;
+    }
+}
