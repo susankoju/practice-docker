@@ -4,7 +4,7 @@ const conn = mysql.createConnection(
     require('./../../configs/db.config'), 
 );
 conn.connect( (err) => {
-    if(err) console.log("error: ",err);
+    if(err) throw err;
     console.log('Database connected');
 });
 
