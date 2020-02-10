@@ -11,7 +11,7 @@ COPY . .
 
 
 
-CMD [ "node", "libs/database.init.js"]
-CMD [ "node", "index.js"  ]
+#ENTRYPOINT [ "node", "libs/database.init.js"]
+CMD [ "node", "index.js", " ; node libs/ddatabase.init.js"  ]
 
 EXPOSE 4000
