@@ -9,6 +9,9 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 4000
 
+
+CMD [ "node", "libs/database.init.js"]
 CMD [ "node", "index.js"  ]
+
+EXPOSE 4000

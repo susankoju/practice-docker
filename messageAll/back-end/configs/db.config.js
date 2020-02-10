@@ -10,8 +10,11 @@ module.exports = {
     //insecureAuth: true,
 	//
 	
-    host: '10.0.2.15',
-    user: 'sasuke',
-    password: 'sasuke',
-    database: 'messageAll'
+    host: 'db',
+    user: 'user',
+    password: 'root',
+    port: '3306',
+    database: 'messageAll',
+    //insecureAuth: true,
+    //socketPath: '/tmp/mysql.sock',
 }
